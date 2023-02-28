@@ -22,6 +22,9 @@ nav{
 ul a li{
     padding: 4.3vh 2vw;   
     list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -49,7 +52,7 @@ h2{
     justify-content: center;
 }
 
-li{
+.projetos{
     list-style: none;
     border: solid black 3px;
     width: 22vw;
@@ -58,8 +61,7 @@ li{
     justify-content: center;
     flex-direction: column;
     padding: 1vh 1vw;
-    margin: 1vh 1vw;
-    
+    margin: 1vh 1vw;   
 
     
 }
@@ -73,7 +75,7 @@ li{
 button{
     background-color: whitesmoke;
     color: black;
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     border-radius: 10px;
     width: 15vw;
     max-width: 300px;
@@ -96,3 +98,40 @@ ul{
     flex-direction: row;
     
 }
+/* Footer */
+
+.footer{
+    background-color: black;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgLogo{
+    width: 3vw;
+    height: 5vh;
+    min-width: 40px;
+    min-height: 60px;
+}
+
+.listaFooter{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.link{
+    padding: 0 1vw;
+}
+
+ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2vw;
+}
+
+/* Footer */
