@@ -78,6 +78,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 body{
@@ -96,14 +97,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
 
 ul li{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 2vw;    
+    padding: 3vh 2vw;   
 }
 
 .link{

@@ -106,6 +106,7 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .imgLogo{
@@ -120,7 +121,6 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
 
 .link{
@@ -131,7 +131,8 @@ ul li{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 2vw;
+    padding: 3vh 2vw;
 }
 
 /* Footer */
+

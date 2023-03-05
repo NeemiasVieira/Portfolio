@@ -1,0 +1,101 @@
+*{
+    font-family: 'Montserrat', sans-serif;    
+}
+
+.navegacao{
+    display: flex;    
+    flex-direction: row;
+    align-items: center;
+    justify-content: initial;
+    width: 100vw;
+    margin: 3vh 0;    
+    height: 5vh;
+    
+    
+}
+
+nav{
+    background-color: #000;
+    
+}
+
+ul a li{
+    padding: 4.3vh 2vw;   
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:hover{
+    font-weight: 900;
+    color:aqua;
+}
+
+header{
+    display: flex;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.footer{
+    background-color: black;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imgLogo{
+    width: 3vw;
+    height: 5vh;
+    min-width: 40px;
+    min-height: 60px;
+}
+
+.listaFooter{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.link{
+    padding: 0 1vw;
+}
+
+ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh 2vw;
+}
+
+.secaoFormulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh 10vw;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30vw;
+    height: 30vw;
+    border: solid black 2px;
+    padding: 10vh 10vw;
+}

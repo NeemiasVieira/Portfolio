@@ -162,12 +162,13 @@ body{
 }
 
 .cv{
-    margin: 0 5vw;
-    width: 902px;
+    margin: 0 4vw;
+    width: 40vw;
     height: 700px;
     display: flex;
-    flex-direction: column;
-    justify-content: center; 
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 28vh;
 }
 
 .download{
@@ -198,6 +199,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .imgLogo{
@@ -212,7 +214,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
 
 .link{
@@ -223,6 +224,78 @@ ul li{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 2vw;
+    padding: 3vh 2vw;
 }
 /* Footer */
+
+.botao{
+    transform: translate(0%, 0%);
+    height: 95px;
+    width: 360px;
+    background: black;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    cursor: pointer;
+    overflow: hidden; 
+}
+
+.botao .content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .bx ,
+.content .textoBotao{
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.botao::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #4e4e4e;
+    top: 0;
+    left: -100%;
+    border-radius: 55px;
+}
+
+.content .textoBotao{
+    color: #FFF;
+    font-size: 28px;
+    margin-right: 8px;
+
+}
+
+.botao.active{
+    height: 20px;
+    width: 500px;
+}
+
+.botao.active .content{
+    transform: translateY(60px);
+    transition: all 0.2s ease;
+    transition-delay: 0.2s;
+
+}
+
+.botao.active::before{
+    animation: layer 1s ease-in-out forwards;
+}
+
+@keyframes layer {
+    100%{
+        left: 0%;
+    }
+}
+
+.botao:hover .content .bx, .botao:hover .content .textoBotao{    
+    color: aqua;
+}
+
