@@ -9,6 +9,11 @@ const lista = {
         "linkProjeto": "https://neemiasvieira.github.io/Loja-Pops-HTML-e-CSS/index.html",
         "linkRepositorio": "https://github.com/NeemiasVieira/Loja-Pops-HTML-e-CSS",
     },
+    2:
+    {
+        "linkProjeto": "https://neemiasvieira.github.io/Fullture-Flix/",
+        "linkRepositorio": "https://github.com/NeemiasVieira/Fullture-Flix",
+    }
 }
 
 const closeModalButton = document.querySelector(".closeButton");
