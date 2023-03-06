@@ -10,6 +10,7 @@
     width: 100vw;
     margin: 3vh 0;    
     height: 5vh;
+    gap: 3vw;
     
     
 }
@@ -20,13 +21,19 @@ nav{
 }
 
 ul a li{
-    padding: 4.3vh 2vw;   
+    padding: 1vh;   
     list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     
 }
+
+.navegacao .selecionado{
+    border-bottom: solid aqua 3.5px;
+    border-radius: 3px;
+ }
+ 
+ .navegacao .naoselecionado{
+     border-bottom: solid black 3.5px;
+ }
 
 a{
     text-decoration: none;
@@ -79,7 +86,6 @@ ul li{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3vh 2vw;
 }
 
 .secaoFormulario{

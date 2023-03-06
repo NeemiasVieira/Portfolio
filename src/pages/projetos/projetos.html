@@ -12,10 +12,10 @@
     <header>
         <nav>
             <ul class="navegacao">
-                <a href="../../../index.html"><li>Inicio</li></a>
-                <a href="../FormacaoExp/formacaoexp.html"><li>Formação e experiência</li></a>
-                <a href=""><li>Projetos</li></a>
-                <a href="../contato/contato.html"><li>Contato</li></a>
+                <a href="../../../index.html" class="naoselecionado" ><li>Inicio</li></a>
+                <a href="../FormacaoExp/formacaoexp.html" class="naoselecionado" ><li>Formação e experiência</li></a>
+                <a href="" class="selecionado" ><li>Projetos</li></a>
+                <a href="../contato/contato.html" class="naoselecionado" ><li>Contato</li></a>
             </ul>
     </header>
 
@@ -26,14 +26,34 @@
                 <li class="projetos">
                     <img src="../../../assets/Listadetarefas.png" alt="" class="imagensProjetos">
                     <p><b>Tecnologias utilizadas:</b> HTML, CSS, JavaScript.<br><br><b>Descrição: </b>Utilizando DOM e localStorage, foi criado uma lista de tarefas com filtros aplicáveis para controle de afazeres</p>
-                    <button>VER PROJETO</button>
+                    <!-- <a href="https://neemiasvieira.github.io/To-Do-List-Js/index.html" target="_blank"> -->
+                        <button class="projetoButton" id="0">VER PROJETO</button>
+                    <!-- </a> -->
                 </li>
                 <li class="projetos">
                     <img src="../../../assets/LojaPops.png" alt="" class="imagensProjetos">
                     <p><b>Tecnologias utilizadas:</b> HTML, CSS.<br><br><b>Descrição: </b>A loja foi elaborada com o objetivo de ser responsiva e integrando a melhor UX para o usuário.</p>
-                    <button>VER PROJETO</button>
+                    <!-- <a href="https://neemiasvieira.github.io/Loja-Pops-HTML-e-CSS/index.html" target="_blank"> -->
+                        <button class="projetoButton" id="1">VER PROJETO</button>
+                    <!-- </a> -->
                 </li>
             </ul>
+
+
+            <div id="sombra" class="hide">
+                <div id="modal" class="hide">
+                    <div class="modalHeader">
+                        <p class="modalTitle">Por favor escolha uma das opções abaixo: </p>
+                        <button class="closeButton" onclick="toggleModal()">
+                            <img src="../../../assets/close.png" alt="" class="closeImg">
+                        </button>
+                    </div>
+                    <div class="modalContent">
+                        <button class="modalButton1">Projeto</button>
+                        <button class="modalButton2">Repositório</button>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -61,5 +81,7 @@
             </li>
         </ul>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>
