@@ -22,10 +22,28 @@
 
     <main>
         <section class="secaoFormulario">
-            <form action="submit" class="formulario">
-                <input type="email" name="" id="">
-                <input type="text" name="" id="">
-            </form>
+            <div>
+                <h3>Escolha a forma de contato</h3>
+                <select name="select" id="selectContact">
+                    <option value="all">Enviar e-mail</option>
+                    <option value="completed">Enviar mensagem no Whatsapp</option>
+                    <option value="uncompleted">Visualizar telefone</option>
+                </select>
+            </div>
+            <div class="e-mail">
+                <form action="https://api.staticforms.xyz/submit" method="POST" class="formulario">
+                    <input type="hidden" name="accessKey" value="9d65a5d5-f238-44af-b1f2-219ec54d45cb">
+                    <input class="input" type="text" name="name" placeholder="Digite seu nome" required>                 
+                    <input class="input" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    <textarea class="textarea" name="message" placeholder="Escreva sua mensagem" required></textarea>
+                    <input type="hidden" name="redirectTo" value="https://neemiasvieira.github.io/Portfolio/src/pages/contato/emailsucess.html">
+                    <a href="./emailsucess.html">
+                        <button type="submit" class="buttonSendEmail">Enviar e-mail</button>
+                    </a>
+                  </form>
+                  <!-- https://www.staticforms.xyz/ -->
+            </div>
+            
         </section>
     </main>
 
@@ -55,5 +73,6 @@
             </li>
         </ul>
     </footer>
+    <script src="./contato.js"></script>
 </body>
 </html>

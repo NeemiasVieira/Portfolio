@@ -1,0 +1,71 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.messageBox{
+    width: 50vw;
+    height: auto;
+    border: solid black 3px;
+    border-radius: 10px;
+    background-color: white;   
+    text-align: center;
+}
+
+.emailImg{
+    max-width: 15vw;
+    max-height: 15vw;
+    padding: 0 15vw;
+    background-color: white;
+}
+
+.messageBoxContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 0 2.5vw 2.5vh 2.5vw;
+    max-height: 20vw;
+    }
+
+.buttonBack{
+    font-size: 16px;
+    color: black;
+    border-radius: 10px;
+    width: 12vw;
+    height: 5vh;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 700ms;
+    text-decoration: none;
+    text-align: center;
+    background-color: white;
+}
+
+.buttonBack:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+
+a{
+    background-color: white;
+}
+
+.messageBoxTitle{
+    background-color: white;
+    margin: 1vh 1vw;
+    padding: 1vh 1vw;
+    border-bottom: solid #bbb 5px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
