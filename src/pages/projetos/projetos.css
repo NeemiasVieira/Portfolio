@@ -240,7 +240,7 @@ button.closeButton{
 
 }
 
-.modalButton:hover{
+.modalButton1:hover, .modalButton2:hover{
     background-color: black;
     color: whitesmoke;
 }
