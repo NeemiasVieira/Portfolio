@@ -130,31 +130,34 @@ input
     text-align: center;   
  } 
 
- .formulario{
+ .emailFormulario{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    gap: 2vh;
-    margin: 3vh 0;
-    padding: 3vh 0;
-    border-top: solid #bbb 5px;
+    gap: 2vh;    
     width: 75vw;
+    padding-top: 11vh;
 
  }
 
- .buttonSendEmail{
+ .buttonSendEmail, .buttonSendWhatsapp{
     font-size: 16px;
     color: black;
     border-radius: 10px;
-    width: 12vw;
-    height: 5vh;
+    width: 17vw;
+    max-width: 350px;
+    height: 6vh;
     font-weight: 700;
     cursor: pointer;
     transition: background-color 700ms;
     text-decoration: none;
     text-align: center;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4vw;
  }
 
  .buttonSendEmail:hover{
@@ -175,4 +178,65 @@ input
 
  .hide{
     display: none;
+ }
+
+ .formularioPadrao{
+    position: fixed;
+    top: 10vh;
+    margin: 3vh 0;
+    padding: 3vh 0;
+    border-bottom: solid #bbb 5px;
+ }
+
+ .buttonSendWhatsapp:hover{
+    background-color: #25d366;
+    color: whitesmoke;
+ }
+
+ .whatsappFormulario{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+    padding-top: 12vh;
+ }
+
+ /* Telefone */
+
+ .telefoneContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .numeroTelefone{
+    font-size: xx-large;
+    font-weight: 900;
+    padding: 1vh 1vw;
+    border: solid black 3px;
+    border-radius: 10px;
+    background-color: #25d366;
+    color: whitesmoke;
+ }
+
+ .telefoneLink{
+    display: flex;
+    color: black;
+    width: 20vw;
+    max-width: 300px;
+    border: solid black 1px;
+    border-radius: 7.5px;
+    align-items: center;
+    justify-content: center;
+    height: 4vh;
+    font-weight: 700;
+    font-size: large;
+    transition: background-color 700ms;
+ }
+
+ .telefoneLink:hover{
+    background-color: black;
+    color: whitesmoke;
  }

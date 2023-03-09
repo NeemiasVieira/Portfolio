@@ -22,16 +22,16 @@
 
     <main>
         <section class="secaoFormulario">
-            <div>
+            <div class="formularioPadrao">
                 <h3>Escolha a forma de contato</h3>
                 <select name="select" id="selectContact">
-                    <option value="all">Enviar e-mail</option>
-                    <option value="completed">Enviar mensagem no Whatsapp</option>
-                    <option value="uncompleted">Visualizar telefone</option>
+                    <option>Enviar e-mail</option>
+                    <option>Enviar mensagem no Whatsapp</option>
+                    <option>Ligar</option>
                 </select>
             </div>
             <div class="e-mail">
-                <form action="https://api.staticforms.xyz/submit" method="POST" class="formulario">
+                <form action="https://api.staticforms.xyz/submit" method="POST" class="emailFormulario">
                     <input type="hidden" name="accessKey" value="9d65a5d5-f238-44af-b1f2-219ec54d45cb">
                     <input class="input" type="text" name="name" placeholder="Digite seu nome" required>                 
                     <input class="input" type="email" name="email" placeholder="Digite seu e-mail" required>
@@ -40,8 +40,25 @@
                     <a href="./emailsucess.html">
                         <button type="submit" class="buttonSendEmail">Enviar e-mail</button>
                     </a>
-                  </form>
+                </form>
+            </div>
                   <!-- https://www.staticforms.xyz/ -->
+            <div class="whatsapp hide">
+                  <form action="submit" class="whatsappFormulario">                   
+                    <textarea class="textareaWhatsapp" placeholder="Escreva sua mensagem" required></textarea>
+                    <button type="submit" class="buttonSendWhatsapp">
+                        <img src="../../../assets/whatsapp.png">
+                        Enviar mensagem
+                    </button>
+                  </form>
+            </div>
+
+            <div class="telefone hide">
+                <div class="telefoneContent">
+                    <p class="numeroTelefone">(13) 99602-0483</p>
+                    <a href="tel: +5513996020483" class="telefoneLink">Realizar chamada</a>
+                </div>
+
             </div>
             
         </section>

@@ -13,6 +13,11 @@ const lista = {
     {
         "linkProjeto": "https://neemiasvieira.github.io/Fullture-Flix/",
         "linkRepositorio": "https://github.com/NeemiasVieira/Fullture-Flix",
+    },
+    3:
+    {
+        "linkProjeto": "https://neemiasvieira.github.io/Exercicios-ProcessoSeletivo/Exercicios/Exercicio%203%20em%20Js/Exercicio3.html",
+        "linkRepositorio": "https://github.com/NeemiasVieira/Exercicios-ProcessoSeletivo/tree/main/Exercicios/Exercicio%203%20em%20Js"
     }
 }
 
@@ -25,24 +30,28 @@ var buttonViewProject = document.getElementsByClassName("projetoButton");
 var id = -1;
 
 const openProject = () => {
-    window.open(lista[id].linkProjeto, '_blank');    
+    window.open(lista[id].linkProjeto, '_blank');
+    modalButtonRepository.removeEventListener("click", openRepository);
     
 }
 const openRepository = () => {
-    window.open(lista[id].linkRepositorio, '_blank');    
+    window.open(lista[id].linkRepositorio, '_blank');
+    modalButtonProject.removeEventListener("click",openProject);    
 }
 
 const toggleModal = () => {
     modal.classList.toggle("hide");
     sombra.classList.toggle("hide");
     if (!modal.classList.contains("hide") && !sombra.classList.contains("hide")){      
-        modalButtonProject.addEventListener("click", () => openProject(), {once: true});
-        modalButtonRepository.addEventListener("click",() => openRepository(), {once: true});
+        modalButtonProject.addEventListener("click", openProject);
+        modalButtonRepository.addEventListener("click", openRepository);
 }
 }
 
 [closeModalButton, sombra].forEach((e) => {
     e.addEventListener("click", () => toggleModal())
+    modalButtonProject.removeEventListener("click",openProject);
+    modalButtonRepository.removeEventListener("click", openRepository);
 });
 
 

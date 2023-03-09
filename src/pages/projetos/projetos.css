@@ -59,6 +59,13 @@ h2{
     justify-content: center;
 }
 
+.listaProjetos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0 1vw;
+}
+
 .projetos{
     list-style: none;
     border: solid black 3px;
@@ -103,6 +110,7 @@ h2{
 ul{
     display: flex;
     flex-direction: row;
+    margin: 0;
     
 }
 /* Footer */
@@ -135,7 +143,7 @@ ul{
 }
 
 ul li{
-    display: flex;
+    display: flex;    
     justify-content: center;
     align-items: center;
 }
