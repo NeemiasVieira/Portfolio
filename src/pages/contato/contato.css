@@ -106,7 +106,7 @@ main{
  }
 
  .formularioPadrao{
-    position: fixed;
+    position: absolute;
     top: 10vh;
     margin: 3vh 0;
     padding: 3vh 0;
@@ -214,7 +214,7 @@ input
     padding: 1vh 1vw;
     border: solid black 3px;
     border-radius: 10px;
-    background-color: #25d366;
+    background-color: #024;
     color: whitesmoke;
  }
 
@@ -313,3 +313,60 @@ ul li{
 
 
 /* Footer */
+
+@media screen and (max-width : 480px){
+
+    .navegacao{
+        font-size: 3vw;
+        justify-content: center;
+        gap: 6vw;
+        padding: 2vh 0;
+    }
+
+    .secaoFormulario{
+        margin: 5vh 5vw;
+        width: 85vw;
+        overflow: hidden;
+    }
+    
+    #selectContact{
+        width: 65vw;
+        margin: 0;
+    }
+
+    .formularioPadrao{
+        width: 85vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        gap: 2vh;
+        margin: 5vh 0;
+        
+    }
+
+    h3{
+        width: 85vw;
+        margin: 0;
+    }
+
+    .input, .textarea, .buttonSendEmail
+    ,.textareaWhatsapp, .buttonSendWhatsapp
+    ,.telefoneLink{
+        width: 65vw;
+    }
+
+    .rightsReserved{
+        font-size: 3vw;
+        max-width: 100vw;
+    }
+
+    .footer{
+        height: 20vh;
+    }
+
+    .listaFooter{
+        padding: 0;
+        gap: 10vw;
+    }
+}

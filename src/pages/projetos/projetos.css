@@ -134,6 +134,7 @@ h2{
     justify-self: flex-end;
 }
 
+
 .projetoButton:hover{
     background-color: black;
     color: whitesmoke;
@@ -343,21 +344,53 @@ ul li{
         width: 80vw;
     }
     
-    .projetoButton{
-        width: 45vw;
+    .projetoButton, .projetoButton:hover{
+        width: 60vw;
     }
 
     .imagensProjetos{
         width: 80vw;
     }
 
+
     .rightsReserved{
         font-size: 3vw;
         max-width: 100vw;
     }
 
+    #modal{
+        width: 80vw;
+        left: 10vw;
+        right: 10vw;
+    }
+
+    .closeImg, button.closeButton{
+        width: 8vw;
+    }
+
+
+    .modalButton1, .modalButton2{
+        width: 30vw;
+    }
+
+    .modalTitle{
+        width: 70vw;
+    }
+
+    .modalHeader, .modalContent{
+        width: 80vw;
+    }
+
+    .modalContent{
+        gap: 7vw;
+    }
+
+    .footer{
+        height: 20vh;
+    }
+
     .listaFooter{
-        padding: 4vh 0 0 0;
+        padding: 0;
         gap: 10vw;
     }
 }
