@@ -5,7 +5,7 @@
 }
 
 body{
-    margin: 0 0;
+    margin: 10vh 0 0 0;
     overflow-x: hidden;    
 }
 
@@ -27,20 +27,24 @@ body::-webkit-scrollbar {
 /* Navegação/Cabeçalho */
 
 .navegacao{
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;    
     flex-direction: row;
     align-items: center;
     justify-content: initial;
     width: 100vw;
-    margin: 3vh 0;    
-    height: 5vh;
+    padding: 3vh 2vw; 
+    margin: 0;   
+    height: 2vh;
+    max-height: 20px;
     gap: 3vw; 
     
 }
 
-nav{
+ul.navegacao{
     background-color: #003;
-    
 }
 
 ul a li{
@@ -92,7 +96,7 @@ h2{
     justify-content: center;
     flex-direction: row;
     width: 100vw;
-    padding: 5vh 0;
+    padding: 10vh 0 0 0;
 }
 
 .imgHome{

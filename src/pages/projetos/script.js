@@ -18,6 +18,11 @@ const lista = {
     {
         "linkProjeto": "https://neemiasvieira.github.io/Exercicios-ProcessoSeletivo/Exercicios/Exercicio%203%20em%20Js/Exercicio3.html",
         "linkRepositorio": "https://github.com/NeemiasVieira/Exercicios-ProcessoSeletivo/tree/main/Exercicios/Exercicio%203%20em%20Js"
+    },
+    4:
+    {
+        "linkProjeto": "https://neemiasvieira.github.io/Calculadora-de-Numeros-Complexos/NumerosComplexos1.html",
+        "linkRepositorio": "https://github.com/NeemiasVieira/Calculadora-de-Numeros-Complexos"
     }
 }
 

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./indexStyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" href="assets/N.png" type="icon" > 
     <title>Neemias Vieira</title>
 </head>
@@ -34,9 +35,9 @@
             </div>
         </section>
 
-        <section class="secaoConquistas">
+        <section class="secaoConquistas" >
             <h2 class="conquistasTitulo">Conquistas</h2>
-            <div class="divConquistas">
+            <div class="divConquistas" data-aos="fade-right">
                 
 
                 <div class="projetosConcluidos">
@@ -95,6 +96,12 @@
 </body>
 
 <script src="https://kit.fontawesome.com/f50aeb4f24.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+    });
+</script>
 
 </html>
     
