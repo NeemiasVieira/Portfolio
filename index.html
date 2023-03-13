@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./indexStyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/N.png" type="icon" > 
     <title>Neemias Vieira</title>
 </head>
 
@@ -14,53 +15,87 @@
     <header>
         <nav>
             <ul class="navegacao">
-                <a href=""  class="selecionado"><li>Inicio</li></a>
-                <a href="./src/pages/FormacaoExp/formacaoexp.html" class="naoselecionado"><li>Formação e experiência</li></a>
-                <a href="./src/pages/projetos/projetos.html" class="naoselecionado"><li>Projetos</li></a>
-                <a href="./src/pages/contato/contato.html" class="naoselecionado"><li>Contato</li></a>
+                <li><a href="" class="selecionado">Inicio</a></li>
+                <li><a href="./src/pages/FormacaoExp/formacaoexp.html" class="naoselecionado">Formação e experiência</a></li>
+                <li><a href="./src/pages/projetos/projetos.html" class="naoselecionado">Projetos</a></li>
+                <li><a href="./src/pages/contato/contato.html" class="naoselecionado">Contato</a></li>
             </ul>
+        </nav>
     </header>
 
     <main>
         <section class="sobre">
-            <h1>Home</h1>
+            <h2>Sobre mim</h2>
             <div class="sobrediv">
                 <img src="./assets/Neemias.png" alt="Ilustração de desenvolvimento" class="imgHome">
-                <div>
-                    <h2>Sobre mim</h2>
-                    <p>Olá! Seja muito bem vindo ao meu Portfólio, sempre fui uma pessoa apaixonada por tecnologia, e hoje estou em busca da minha primeira experiência na área, gosto bastante de aprender e tenho certeza que estou pronto para embarcar nessa nova aventura, vamos trabalhar juntos?</p>
+                <div class="sobreTexto">                    
+                    <p>Olá! Seja muito bem vindo ao meu Portfólio, sempre fui uma pessoa apaixonada por tecnologia, e hoje estou em busca da minha primeira experiência na área, gosto bastante de aprender e tenho certeza que estou pronto para iniciar no mercado de tecnologia =)</p>
                 </div>
             </div>
         </section>
+
+        <section class="secaoConquistas">
+            <h2 class="conquistasTitulo">Conquistas</h2>
+            <div class="divConquistas">
+                
+
+                <div class="projetosConcluidos">
+                    <img src="./assets/projetosicone.png" alt="" class="icone">
+                    <div class="secaoConquistasContent">
+                        <h3>+6 Projetos Concluidos</h2>
+                        <p class="textoConquista">Estudar programação sem prática é basicamente impossível né? Ao longo de todos os meus estudos pude aplicar diversos conhecimentos, alguns projetos ainda estão em desenvolvimento.</p>
+                    </div>
+                </div>
+
+                <div class="linguagensEstudadas">
+                    <img src="./assets/linguagensicone.png" alt="" class="icone">
+                    <div class="secaoConquistasContent">
+                        <h3>+10 Tecnologias Estudadas</h3>
+                        <p class="textoConquista">C++, C#, Python, JavaScript, Matlab, Arduino, React-Native, ReactJs, Node, SQL, MongoDb</p>
+                    </div>
+                </div>
+
+                <div class="softskills">
+                    <img src="./assets/softskillsicone.png" alt="" class="icone">
+                    <div class="secaoConquistasContent">
+                        <h3>Soft Skills</h3>
+                        <p class="textoConquista">Experiências adqueridas com: <br>Trabalho em equipe, comunicação, resolução de problemas, gestão e liderança de equipe, análise de qualidade</p>
+                    </div>
+                </div>
+
+        </section>
+
     </main>
 
 
-    <footer class="footer">
+    <footer class="footer">        
         <ul class="listaFooter">
             <li>                
-                <a href="https://api.whatsapp.com/send/?phone=5513996020483&text&type=phone_number&app_absent=0" target="_blank" >
-                    <img src="./assets/WhatsappLogo.jpg" alt="" class="imgLogo">
+                <a href="https://api.whatsapp.com/send/?phone=5513996020483&text&type=phone_number&app_absent=0" target="_blank" class="iconBack">
+                    <i class="fa-brands fa-whatsapp"></i>
                 </a>
-                <a href="https://api.whatsapp.com/send/?phone=5513996020483&text&type=phone_number&app_absent=0" target="_blank" class="link">Whatsapp</a>
             </li>
 
             <li> 
-                <a href="https://github.com/NeemiasVieira" target="_blank">
-                <img src="./assets/GitLogo.jpg" alt="" class="imgLogo">
+                <a href="https://github.com/NeemiasVieira" target="_blank" class="iconBack">
+                    <i class="fa-brands fa-github"></i>
                 </a>
-                <a href="https://github.com/NeemiasVieira" target="_blank" class="link">Github</a>
             </li>
             
             <li>
-                <a href="https://www.linkedin.com/in/neemiasvieira" target="_blank">
-                <img src="./assets/LinkedinLogo.jpg" alt="" class="imgLogo">
+                <a href="https://www.linkedin.com/in/neemiasvieira" target="_blank" class="iconBack">
+                    <i class="fa-brands fa-linkedin-in"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/neemiasvieira" target="_blank" class="link">Linkedin</a>
             </li>
         </ul>
+        <p class="rightsReserved">Todos os direitos reservados © 2023</p>
+        <!-- https://fontawesome.com/icons -->
     </footer>
     
 </body>
+
+<script src="https://kit.fontawesome.com/f50aeb4f24.js" crossorigin="anonymous"></script>
+
 </html>
     
     

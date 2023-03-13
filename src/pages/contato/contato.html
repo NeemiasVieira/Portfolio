@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contato.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../../assets/N.png" type="icon"> 
     <title>Contato</title>
 </head>
 <body>
     <header>
         <nav>
             <ul class="navegacao">
-                <a href="../../../index.html" class="naoselecionado" ><li>Inicio</li></a>
-                <a href="../FormacaoExp/formacaoexp.html" class="naoselecionado" ><li>Formação e experiência</li></a>
-                <a href="../projetos/projetos.html" class="naoselecionado" ><li>Projetos</li></a>
-                <a href="" class="selecionado" ><li>Contato</li></a>
+                <li><a href="../../../index.html" class="naoselecionado">Inicio</a></li>
+                <li><a href="../FormacaoExp/formacaoexp.html" class="naoselecionado">Formação e experiência</a></li>
+                <li><a href="../projetos/projetos.html" class="naoselecionado">Projetos</a></li>
+                <li><a href="" class="selecionado">Contato</a></li>
             </ul>
+        </nav>
     </header>
 
 
@@ -47,7 +49,7 @@
                   <form action="submit" class="whatsappFormulario">                   
                     <textarea class="textareaWhatsapp" placeholder="Escreva sua mensagem" required></textarea>
                     <button type="submit" class="buttonSendWhatsapp">
-                        <img src="../../../assets/whatsapp.png">
+                        <img src="../../../assets/whatsapp.png" alt="Imagem do logotipo do whatsapp.">
                         Enviar mensagem
                     </button>
                   </form>
@@ -56,7 +58,7 @@
             <div class="telefone hide">
                 <div class="telefoneContent">
                     <p class="numeroTelefone">(13) 99602-0483</p>
-                    <a href="tel: +5513996020483" class="telefoneLink">Realizar chamada</a>
+                    <a href="tel:+5513996020483" class="telefoneLink">Realizar chamada</a>
                 </div>
 
             </div>
@@ -66,30 +68,30 @@
 
 
 
-    <footer class="footer">
+    <footer class="footer">        
         <ul class="listaFooter">
             <li>                
-                <a href="https://api.whatsapp.com/send/?phone=5513996020483&text&type=phone_number&app_absent=0" target="_blank" >
-                    <img src="../../../assets/WhatsappLogo.jpg" alt="" class="imgLogo">
+                <a href="https://api.whatsapp.com/send/?phone=5513996020483&text&type=phone_number&app_absent=0" target="_blank" class="iconBack">
+                    <i class="fa-brands fa-whatsapp"></i>
                 </a>
-                <a href="https://api.whatsapp.com/send/?phone=5513996020483&text&type=phone_number&app_absent=0" target="_blank" class="link">Whatsapp</a>
             </li>
 
             <li> 
-                <a href="https://github.com/NeemiasVieira" target="_blank">
-                <img src="../../../assets/GitLogo.jpg" alt="" class="imgLogo">
+                <a href="https://github.com/NeemiasVieira" target="_blank" class="iconBack">
+                    <i class="fa-brands fa-github"></i>
                 </a>
-                <a href="https://github.com/NeemiasVieira" target="_blank" class="link">Github</a>
             </li>
             
             <li>
-                <a href="https://www.linkedin.com/in/neemiasvieira" target="_blank">
-                <img src="../../../assets/LinkedinLogo.jpg" alt="" class="imgLogo">
+                <a href="https://www.linkedin.com/in/neemiasvieira" target="_blank" class="iconBack">
+                    <i class="fa-brands fa-linkedin-in"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/neemiasvieira" target="_blank" class="link">Linkedin</a>
             </li>
         </ul>
+        <p class="rightsReserved">Todos os direitos reservados © 2023</p>
     </footer>
+
     <script src="./contato.js"></script>
+    <script src="https://kit.fontawesome.com/f50aeb4f24.js" crossorigin="anonymous"></script>
 </body>
 </html>

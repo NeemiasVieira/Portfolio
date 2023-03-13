@@ -1,6 +1,30 @@
+/* Globais */
+
 *{
     font-family: 'Montserrat', sans-serif;    
 }
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 25px;            
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #222;        
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: whitesmoke;
+    border: solid black 2.5px;    
+  }
+
+/* Globais */
+
+/* Navegação/Cabeçalho */
 
 .navegacao{
     display: flex;    
@@ -11,12 +35,10 @@
     margin: 3vh 0;    
     height: 5vh;
     gap: 3vw;
-    
-    
 }
 
 nav{
-    background-color: #000;
+    background-color: #003;
     
 }
 
@@ -27,12 +49,12 @@ ul a li{
 }
 
 .navegacao .selecionado{
-    border-bottom: solid aqua 3.5px;
+    border-bottom: solid whitesmoke 3.5px;
     border-radius: 3px;
  }
  
  .navegacao .naoselecionado{
-     border-bottom: solid black 3.5px;
+     border-bottom: solid #003 3.5px;
  }
 
 a{
@@ -42,50 +64,22 @@ a{
 
 a:hover{
     font-weight: 900;
-    color:aqua;
+    color: #fff;
 }
 
 header{
     display: flex;
 }
 
-body{
-    margin: 0;
-    overflow-x: hidden;
-}
+/* Navegação/Cabeçalho */
 
-.footer{
-    background-color: black;
-    height: 10vh;
+/* Seção Formulário */
+
+main{
     display: flex;
     justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.imgLogo{
-    width: 3vw;
-    height: 5vh;
-    min-width: 40px;
-    min-height: 60px;
-}
-
-.listaFooter{
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.link{
-    padding: 0 1vw;
-}
-
-ul li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: rgba(220,220,220);
+    min-height: 74vh;
 }
 
 .secaoFormulario{
@@ -102,11 +96,17 @@ ul li{
     border-radius: 10px;
 }
 
-main{
-    display: flex;
-    justify-content: center;
-    background-color: rgba(220,220,220);
-}
+.hide{
+    display: none;
+ }
+
+ .formularioPadrao{
+    position: fixed;
+    top: 10vh;
+    margin: 3vh 0;
+    padding: 3vh 0;
+    border-bottom: solid #bbb 5px;
+ }
 
 input
  {
@@ -129,6 +129,13 @@ input
     background-color: whitesmoke;
     text-align: center;   
  } 
+
+ h3{
+    width: 70vw;
+    text-align: center;
+ }
+ 
+ /* e-mail */
 
  .emailFormulario{
     display: flex;
@@ -165,27 +172,12 @@ input
     color: whitesmoke;
  }
 
- h3{
-    width: 70vw;
-    text-align: center;
- }
+ /* e-mail */
 
  #selectContact{
     width: 30vw;
     margin: 0 20.0vw;
     text-align: center;
- }
-
- .hide{
-    display: none;
- }
-
- .formularioPadrao{
-    position: fixed;
-    top: 10vh;
-    margin: 3vh 0;
-    padding: 3vh 0;
-    border-bottom: solid #bbb 5px;
  }
 
  .buttonSendWhatsapp:hover{
@@ -240,3 +232,79 @@ input
     background-color: black;
     color: whitesmoke;
  }
+
+  /* Telefone */
+
+ /* Seção Formulário */
+
+ /* Footer */
+
+ .footer{
+    background-color: black;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.fa-brands{
+    font-size: 2.6em;    
+    transition: color 500ms;
+}
+
+.iconBack{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #222;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    transition: all 250ms;
+}
+
+.iconBack:hover{
+    background-color: whitesmoke;
+    color: black;
+    transform: scale(1.1);
+}
+
+.imgLogo{
+    width: 1.5vw;
+    height: 1.5vh;
+    min-width: 30px;
+    min-height: 30px;
+}
+
+.listaFooter{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    padding-top: 4vh;
+    margin: 0;
+}
+
+ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.link{
+    padding: 0 0.3vw;
+}
+
+.rightsReserved{
+    color: #ccc;
+    font-size: 1em;
+    text-align: center;
+    padding: 0 0 0 2vw;
+}
+
+
+/* Footer */

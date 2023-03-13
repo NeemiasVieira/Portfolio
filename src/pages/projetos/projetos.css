@@ -1,6 +1,34 @@
+/* Globais */
+
 *{
     font-family: 'Montserrat', sans-serif;    
 }
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+main{
+    min-height: 71.9vh;
+}
+
+body::-webkit-scrollbar {
+    width: 25px;            
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #222;        
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: whitesmoke;
+    border: solid black 2.5px;    
+  }
+
+/* Globais */
+
+/* Navegação/Cabeçalho */
 
 .navegacao{
     display: flex;    
@@ -16,7 +44,7 @@
 }
 
 nav{
-    background-color: #000;
+    background-color: #003;
     
 }
 
@@ -27,12 +55,12 @@ ul a li{
 }
 
 .navegacao .selecionado{
-    border-bottom: solid aqua 3.5px;
+    border-bottom: solid whitesmoke 3.5px;
     border-radius: 3px;
  }
  
  .navegacao .naoselecionado{
-     border-bottom: solid black 3.5px;
+     border-bottom: solid #003 3.5px;
  }
 
 a{
@@ -42,17 +70,16 @@ a{
 
 a:hover{
     font-weight: 900;
-    color:aqua;
+    color: #fff;
 }
 
 header{
     display: flex;
 }
 
-body{
-    margin: 0;
-    overflow-x: hidden;
-}
+/* Navegação/Cabeçalho */
+
+/* Projetos */
 
 h2{
     display: flex;   
@@ -69,86 +96,56 @@ h2{
 .projetos{
     list-style: none;
     border: solid black 3px;
-    width: 22vw;
-    max-width: 300px;
+    width: 25vw;
+    max-width: 350px;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 1vh 1vw;
-    margin: 1vh 1vw;   
+    justify-content: initial;
+    flex-direction: column;    
+    margin: 1vh 1vw;
+    transition: border-color 350ms;   
+}
 
-    
+.projetosContent{
+    padding: 1.5vh 1vw;
+    border-top: solid #222 3px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+
 }
 
 .imagensProjetos{
-    width: 22vw;
+    width: 25vw;
     height: 35vh;
-    max-width: 300px;
+    max-width: 350px;
 }
 
 .projetoButton{
     background-color: whitesmoke;
     color: black;
-    font-size: 1.5vw;
+    font-size: 1.2em;
     border-radius: 10px;
-    width: 15vw;
-    max-width: 300px;
+    width: 13vw;
+    max-width: 250px;
     height: 5vh;
-    align-self: center;
-    font-weight: 500;
+    align-self: center;    
+    font-weight: 600;
     transition: all 500ms;
     cursor: pointer;
+    justify-self: flex-end;
 }
 
 .projetoButton:hover{
     background-color: black;
     color: whitesmoke;
     width: 17vw;
+    max-width: 300px;
     font-weight: 900;
 }
 
-ul{
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    
-}
-/* Footer */
+/* Projetos */
 
-.footer{
-    background-color: black;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.imgLogo{
-    width: 3vw;
-    height: 5vh;
-    min-width: 40px;
-    min-height: 60px;
-}
-
-.listaFooter{
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.link{
-    padding: 0 1vw;
-}
-
-ul li{
-    display: flex;    
-    justify-content: center;
-    align-items: center;
-}
-
-/* Footer */
+/* Projetos Modal */
 
 #modal{
     width: 35vw;
@@ -258,3 +255,76 @@ button.closeButton{
     pointer-events: none;
 }
 
+/* Projetos Modal */
+
+/* Footer */
+
+.footer{
+    background-color: black;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.fa-brands{
+    font-size: 2.6em;    
+    transition: color 500ms;
+}
+
+.iconBack{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #222;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    transition: all 250ms;
+}
+
+.iconBack:hover{
+    background-color: whitesmoke;
+    color: black;
+    transform: scale(1.1);
+}
+
+.imgLogo{
+    width: 1.5vw;
+    height: 1.5vh;
+    min-width: 30px;
+    min-height: 30px;
+}
+
+.listaFooter{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    padding-top: 4vh;
+    margin: 0;
+}
+
+ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.link{
+    padding: 0 0.3vw;
+}
+
+.rightsReserved{
+    color: #ccc;
+    font-size: 1em;
+    text-align: center;
+    padding: 0 0 0 2vw;
+}
+
+
+/* Footer */

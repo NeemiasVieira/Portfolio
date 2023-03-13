@@ -6,45 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./projetos.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../../assets/N.png" type="icon"> 
     <title>Projetos</title>
 </head>
 <body>
     <header>
         <nav>
             <ul class="navegacao">
-                <a href="../../../index.html" class="naoselecionado" ><li>Inicio</li></a>
-                <a href="../FormacaoExp/formacaoexp.html" class="naoselecionado" ><li>Formação e experiência</li></a>
-                <a href="" class="selecionado" ><li>Projetos</li></a>
-                <a href="../contato/contato.html" class="naoselecionado" ><li>Contato</li></a>
+                <li><a href="../../../index.html" class="naoselecionado" >Inicio</a></li>
+                <li><a href="../FormacaoExp/formacaoexp.html" class="naoselecionado" >Formação e experiência</a></li>
+                <li><a href="" class="selecionado">Projetos</a></li>
+                <li><a href="../contato/contato.html" class="naoselecionado">Contato</a></li>
             </ul>
+        </nav>
     </header>
 
     <main>
-        <h2>Projetos</h2>
         <section>
+            <h2>Projetos</h2>
             <ul class="listaProjetos">
                 <li class="projetos">
                     <img src="../../../assets/Listadetarefas.png" alt="" class="imagensProjetos">
-                    <p><b>Tecnologias utilizadas:</b> HTML, CSS, JavaScript.<br><br><b>Descrição: </b>Utilizando DOM e localStorage, foi criado uma lista de tarefas com filtros aplicáveis para controle de afazeres</p>
+                    <div class="projetosContent">
+                        <p><b>Tecnologias utilizadas:</b> HTML, CSS, JavaScript.<br><br><b>Descrição: </b>Utilizando DOM e localStorage, foi criado uma lista de tarefas com filtros aplicáveis para controle de afazeres. Esse proejeto utiliza login com ciptografia simples.</p>
                         <button class="projetoButton" id="0">VER PROJETO</button>
+                    </div>
                 </li>
 
                 <li class="projetos">
                     <img src="../../../assets/LojaPops.png" alt="" class="imagensProjetos">
-                    <p><b>Tecnologias utilizadas:</b> HTML, CSS.<br><br><b>Descrição: </b>A loja foi elaborada com o objetivo de ser responsiva e integrando a melhor UX para o usuário.</p>
+                    <div class="projetosContent">
+                        <p><b>Tecnologias utilizadas:</b> HTML, CSS.<br><br><b>Descrição: </b>A loja foi possui 3 páginas, elaboradas com o objetivo de serem responsivas e integrarem a melhor UX para o usuário, tanto aquele que utiliza navegador web quanto o que utiliza o mobile.</p>
                         <button class="projetoButton" id="1">VER PROJETO</button>
+                    </div>
                 </li>
 
                 <li class="projetos">
                     <img src="../../../assets/Fullflix.png" alt="" class="imagensProjetos">
-                    <p><b>Tecnologias utilizadas:</b> ReactJs, Styled-Components, React-Router-Dom, Axios.<br><br><b>Descrição: </b>Utilizando uma API open source de filmes, o objetivo do projeto é exibir na tela os filmes mais populares do momento.</p>
+                    <div class="projetosContent">
+                        <p><b>Tecnologias utilizadas:</b> ReactJs, Styled-Components, React-Router-Dom, Axios.<br><br><b>Descrição: </b>Utilizando uma API open source de filmes, o objetivo do projeto é exibir na tela os filmes mais populares do momento.</p>
                         <button class="projetoButton" id="2">VER PROJETO</button>
+                    </div>
                 </li>
 
                 <li class="projetos">
                     <img src="../../../assets/geradorCrachas.png" alt="" class="imagensProjetos">
-                    <p><b>Tecnologias utilizadas:</b> HTML, CSS, JavaScript.<br><br><b>Descrição: </b>Atendendo a suposta necessidade da empresa, foi criado um gerador de crachás para seus colaboradores.</p>
+                    <div class="projetosContent">
+                        <p><b>Tecnologias utilizadas:</b> HTML, CSS, JavaScript.<br><br><b>Descrição: </b>Essa aplicação foi exercício de um processo seletivo, e atendendo a suposta necessidade da empresa, foi criado um gerador de crachás para seus colaboradores.</p>
                         <button class="projetoButton" id="3">VER PROJETO</button>
+                    </div>
                 </li>
 
             </ul>
@@ -67,31 +77,30 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer">        
         <ul class="listaFooter">
             <li>                
-                <a href="https://api.whatsapp.com/send/?phone=5513996020483&text&type=phone_number&app_absent=0" target="_blank" >
-                    <img src="../../../assets/WhatsappLogo.jpg" alt="" class="imgLogo">
+                <a href="https://api.whatsapp.com/send/?phone=5513996020483&text&type=phone_number&app_absent=0" target="_blank" class="iconBack">
+                    <i class="fa-brands fa-whatsapp"></i>
                 </a>
-                <a href="https://api.whatsapp.com/send/?phone=5513996020483&text&type=phone_number&app_absent=0" target="_blank" class="link">Whatsapp</a>
             </li>
 
             <li> 
-                <a href="https://github.com/NeemiasVieira" target="_blank">
-                <img src="../../../assets/GitLogo.jpg" alt="" class="imgLogo">
+                <a href="https://github.com/NeemiasVieira" target="_blank" class="iconBack">
+                    <i class="fa-brands fa-github"></i>
                 </a>
-                <a href="https://github.com/NeemiasVieira" target="_blank" class="link">Github</a>
             </li>
             
             <li>
-                <a href="https://www.linkedin.com/in/neemiasvieira" target="_blank">
-                <img src="../../../assets/LinkedinLogo.jpg" alt="" class="imgLogo">
+                <a href="https://www.linkedin.com/in/neemiasvieira" target="_blank" class="iconBack">
+                    <i class="fa-brands fa-linkedin-in"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/neemiasvieira" target="_blank" class="link">Linkedin</a>
             </li>
         </ul>
+        <p class="rightsReserved">Todos os direitos reservados © 2023</p>
     </footer>
 
     <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/f50aeb4f24.js" crossorigin="anonymous"></script>
 </body>
 </html>
