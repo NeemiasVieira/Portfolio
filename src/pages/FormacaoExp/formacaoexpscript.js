@@ -10,7 +10,9 @@ const proxImagem = () => {
     if (contador>3){
         contador = 1
     }
-
+    document.getElementById("radio1").checked = false;
+    document.getElementById("radio2").checked = false;
+    document.getElementById("radio3").checked = false;
     document.getElementById("radio"+contador).checked = true;
 }
 

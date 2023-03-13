@@ -78,3 +78,28 @@ a{
 
 /* Message Box */
 
+@media screen and (max-width : 480px){
+
+    .messageBox{
+        width: 80vw;
+        height: 32vh;
+    }
+
+    .messageBoxContent{
+        display: flex;
+        flex-flow: column wrap;
+        gap: 3vh;
+        max-height: 30vh;
+    }
+
+    .emailImg{
+        padding: 0 30vw;
+    }
+
+    .buttonBack{
+        width: 45vw;
+        border: solid black 2px;
+    }
+
+
+}

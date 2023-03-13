@@ -126,6 +126,7 @@ header{
     border-radius: 10px; 
     cursor: pointer;
     transition: 500ms;
+    opacity: 0;
 }
 
 .manualBtn:not(:last-child){

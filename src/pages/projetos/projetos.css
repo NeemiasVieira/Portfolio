@@ -341,15 +341,16 @@ ul li{
     }
 
     .projetos{
-        width: 80vw;
+        width: 70vw;
+        border-radius: 10px;
     }
     
     .projetoButton, .projetoButton:hover{
-        width: 60vw;
+        width: 55vw;
     }
 
     .imagensProjetos{
-        width: 80vw;
+        width: 70vw;
     }
 
 
@@ -359,29 +360,35 @@ ul li{
     }
 
     #modal{
-        width: 80vw;
-        left: 10vw;
-        right: 10vw;
+        width: 90vw;
+        left: 5vw;
+        right: 5vw;
     }
 
     .closeImg, button.closeButton{
-        width: 8vw;
+        width: 8vw;        
+    }
+
+    button.closeButton{
+        margin-top: -5vh;
+        margin-right: 2vw;
     }
 
 
     .modalButton1, .modalButton2{
-        width: 30vw;
+        width: 35vw;
     }
 
     .modalTitle{
-        width: 70vw;
-    }
-
-    .modalHeader, .modalContent{
         width: 80vw;
     }
 
+    .modalHeader, .modalContent{
+        width: 90vw;
+    }
+
     .modalContent{
+        height: 13vh;
         gap: 7vw;
     }
 

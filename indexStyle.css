@@ -255,7 +255,7 @@ ul li{
         font-size: 3vw;
         max-width: 55vw;
         padding: 0 3vw;
-        min-height: 25vh;
+        min-height: 26vh;
     }
 
     .sobrediv{
@@ -281,13 +281,12 @@ ul li{
     }
     
     .projetosConcluidos, .linguagensEstudadas, .softskills{
-        width: 80vw;
+        width: 90vw;
         gap: 5vw;
     }
     
     .divConquistas{
         flex-flow: column wrap;
-        gap: 3vh;
     }
 
     .secaoConquistasContent{
