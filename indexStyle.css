@@ -28,6 +28,7 @@ body::-webkit-scrollbar {
 
 .navegacao{
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     display: flex;    
@@ -39,7 +40,7 @@ body::-webkit-scrollbar {
     margin: 0;   
     height: 2vh;
     max-height: 20px;
-    gap: 5vw; 
+    gap: 3vw; 
     
 }
 
@@ -96,7 +97,7 @@ h2{
     justify-content: center;
     flex-direction: row;
     width: 100vw;
-    padding: 10vh 0 0 0;
+    padding: 5vh 0 0 0;
     align-items: center;
 }
 
@@ -135,19 +136,21 @@ h2::after{
 
 h3{
     margin: 0 0 1vh 0;
-    font-size: 1.3em;
+    font-size: 1.1em;
+    width: 23vw;
 }
 
 
 .divConquistas{
     display: flex;
     justify-content: center;
-    gap: 3vw;
+    gap: 4vw;
     margin: 6vh auto;
 }
 
 .conquistasTitulo{
     text-align: center;
+    padding-top: 5vh;
 }
 
 .icone{
@@ -158,12 +161,12 @@ h3{
 .projetosConcluidos, .linguagensEstudadas, .softskills{
     display: flex;
     flex-flow: row wrap;
-    width: 20vw;
+    width: 27vw;
     gap: 1.5vw;
 }
 
 .secaoConquistasContent{
-    width: 15vw;
+    width: 20vw;
 }
 
 .textoConquista{
