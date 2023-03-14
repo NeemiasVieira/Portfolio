@@ -39,7 +39,7 @@ body::-webkit-scrollbar {
     margin: 0;   
     height: 2vh;
     max-height: 20px;
-    gap: 3vw; 
+    gap: 5vw; 
     
 }
 
@@ -169,6 +169,7 @@ h3{
 .textoConquista{
     padding: 0;
     font-size: 1em;
+    width: 20vw;
 }
 
 /* Seção Conquistas */
