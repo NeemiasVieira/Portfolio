@@ -84,15 +84,16 @@ header{
 
 .slider{
     margin: 0 auto;
-    width: 900px;
-    height: 630px;
+    width: 45vw;
+    height: 72vh;
     overflow: hidden;
     border: solid black 1px;
+    min-width: 750px;
 }
 
 .slides{
     width: 400%;
-    height: 400px;
+    height: 72vh;
     display: flex;
     }
 
@@ -106,17 +107,20 @@ header{
 }
 
 .primeiroSlide{
-    transition: 500ms;
+    transition: 500ms;   
 }
 
-.slide img{
-    width: 900px;
+.slide img, .primeiroSlide img{
+    width: 45vw;
+    height: 72vh; 
+    min-width: 750px;   
 }
 
 .navegacaoManual{
     position: absolute;
-    width: 900px;
-    margin-top: 170px;
+    width: 45vw;
+    min-width: 750px;
+    margin-top: -6vh;
     display: flex;
     justify-content: center;
 }
@@ -161,8 +165,9 @@ header{
 
 .navegacaoAuto{
     position: absolute;
-    width: 900px;
-    margin-top: 570px;
+    width: 45vw;
+    min-width: 750px;
+    margin-top: 66vh;
     display: flex;
     justify-content: center;
     
@@ -191,7 +196,6 @@ header{
     flex-direction: row;
     text-align: center;
     margin: 5vh 5vw;
-    width: 100vw;
     overflow: hidden;
 }
 
@@ -379,14 +383,18 @@ ul li{
     .slider{
         height: 32vh;
         width: 100vw;
+        min-width: 0;
     }
 
     .slide img, .primeiroSlide img{
         width: 100vw;
+        height: auto;
+        min-width: 0;
     }
 
     .navegacaoManual, .navegacaoAuto{
         width: 100vw;
+        min-width: 0;
     }
 
     .navegacaoManual{
