@@ -125,7 +125,7 @@ h2{
     color: black;
     font-size: 1.2em;
     border-radius: 10px;
-    width: 13vw;
+    width: 17vw;
     max-width: 250px;
     height: 5vh;
     align-self: center;    
@@ -139,7 +139,7 @@ h2{
 .projetoButton:hover{
     background-color: black;
     color: whitesmoke;
-    width: 17vw;
+    width: 21vw;
     max-width: 300px;
     font-weight: 900;
 }
@@ -150,11 +150,11 @@ h2{
 
 #modal{
     width: 35vw;
-    height: 25vh;
+    height: 40vh;
     position: absolute;
     display: flex;
-    top: 37.5vh;
-    bottom: 37.5vh;
+    top: 30vh;
+    bottom: 30vh;
     left: 32.5vw;
     right: 32.5vw;
     background-color: whitesmoke;
@@ -200,13 +200,13 @@ h2{
 
 .closeImg{
     width: 4.0vw;
-    height: 3vh;
+    height: 5vh;
     opacity: 0.9;
 }
 
 button.closeButton{
-    width: 3vw;
-    height: 3vh;     
+    width: 4vw;
+    height: 5vh;     
     transition: opacity 500ms;
     cursor: pointer;
     opacity: 0.9;
@@ -221,6 +221,7 @@ button.closeButton{
     margin-right: 1vw;
     max-width: 40px;
     max-height: 40px;
+    margin-top: -8vh;
 }
 
 .closeButton:hover, .closeImg:hover{
@@ -239,8 +240,8 @@ button.closeButton{
     font-size: 16px;
     color: black;
     border-radius: 5px;
-    width: 10vw;
-    height: 4vh;
+    width: 13vw;
+    height: 6vh;
     font-weight: 700;
     cursor: pointer;
     transition: background-color 700ms;
@@ -263,7 +264,6 @@ button.closeButton{
 
 .footer{
     background-color: black;
-    height: 15vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -307,7 +307,7 @@ button.closeButton{
     justify-content: center;
     align-items: center;
     gap: 2vw;
-    padding-top: 4vh;
+    padding: 4vh 0 0 1.5vw;
     margin: 0;
 }
 

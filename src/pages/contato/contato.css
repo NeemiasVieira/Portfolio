@@ -149,7 +149,7 @@ input
     align-items: center;
     gap: 2vh;    
     width: 75vw;
-    padding-top: 11vh;
+    padding-top: 16vh;
 
  }
 
@@ -247,7 +247,6 @@ input
 
  .footer{
     background-color: black;
-    height: 15vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -291,7 +290,7 @@ input
     justify-content: center;
     align-items: center;
     gap: 2vw;
-    padding-top: 4vh;
+    padding: 4vh 0 0 1.5vw;
     margin: 0;
 }
 
