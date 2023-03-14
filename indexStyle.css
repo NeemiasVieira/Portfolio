@@ -97,10 +97,12 @@ h2{
     flex-direction: row;
     width: 100vw;
     padding: 10vh 0 0 0;
+    align-items: center;
 }
 
 .imgHome{
     margin: 2vh 2vw;
+    border-right: solid black 3px;
 }
 
 p{
@@ -119,18 +121,22 @@ h2::after{
     border-radius: 3px;
 }
 
-.sobreTexto{
-    border-left: solid black 3px;
+.sobreTexto{    
     display: flex;
     align-items: center;
     font-size: 1em;
-    min-height: 80vh;
+    max-height: 500px;
 }
 
 /* Seção Sobre */
 
 /* Seção Conquistas */
 
+
+h3{
+    margin: 0 0 1vh 0;
+    font-size: 1.3em;
+}
 
 
 .divConquistas{
@@ -150,8 +156,10 @@ h2::after{
 }
 
 .projetosConcluidos, .linguagensEstudadas, .softskills{
+    display: flex;
+    flex-flow: row wrap;
     width: 20vw;
-
+    gap: 1.5vw;
 }
 
 .secaoConquistasContent{
@@ -160,7 +168,7 @@ h2::after{
 
 .textoConquista{
     padding: 0;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 /* Seção Conquistas */
@@ -257,7 +265,7 @@ ul li{
     }
 
     .sobrediv{
-        padding-top: 8vh
+        padding-top: 8vh;        
     }
     
     h2{
@@ -300,7 +308,7 @@ ul li{
     }
 
     h3{
-        width: 70vw;
+        width: 70vw;        
     }
 
 
