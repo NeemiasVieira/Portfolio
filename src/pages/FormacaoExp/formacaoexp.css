@@ -213,7 +213,7 @@ header{
 
 .botao{
     transform: translate(0%, 0%);
-    height: 95px;
+    height: 90px;
     width: 20vw;
     background: black;
     border-radius: 30px;
@@ -253,11 +253,14 @@ header{
     color: #FFF;
     font-size: 28px;
     margin-right: 8px;
+}
 
+.content{
+    gap: 0.5vw;
 }
 
 .botao.active{
-    height: 20px;
+    height: 2vh;
     width: 25vw;
 }
 

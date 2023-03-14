@@ -117,16 +117,14 @@ h2::after{
     content: "";
     margin: 5px auto;
     background-color: #003;
-    width: 7vw;
+    width: 6em;
     height: 5px;
     border-radius: 3px;
 }
 
 .sobreTexto{    
-    display: flex;
-    align-items: center;
-    font-size: 1em;
-    max-height: 500px;
+    font-size: 1.2em;
+    max-width: 330px;
 }
 
 /* Seção Sobre */
