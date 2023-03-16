@@ -312,7 +312,7 @@ ul li{
     .imgHome{
         max-width: 45vw;
         margin: 0;
-        height: 31vh;
+        padding: 7.5vw 0;
     }
 
     .sobreTexto{
@@ -325,6 +325,7 @@ ul li{
 
     .conquistasTitulo{
         padding-top: 8vh;
+        font-size: 1.1em;
     }
 
     .secaoConquistas{

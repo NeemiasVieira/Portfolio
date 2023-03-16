@@ -356,6 +356,10 @@ ul li{
         gap: 2vw;
     }
 
+    .numeroTelefone{
+        color: #000;
+    }
+
     .rightsReserved{
         font-size: 3vw;
         max-width: 100vw;
