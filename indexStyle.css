@@ -79,6 +79,40 @@ header{
 
 /* Navegação/Cabeçalho */
 
+/* Informações Principais */
+
+.titulosPrincipais{
+    position: absolute; 
+    top: 20%;
+    left: 5%;
+    display: block;
+}
+
+.nome, .profissao{
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    margin: 0;
+}
+
+.nome{
+    text-align: initial;
+    font-size: 4em;
+    animation: digitando 1s steps(110, end) forwards;
+  
+}
+
+.profissao{
+    font-size: 2.2em;
+    animation: digitando2 2.5s steps(110, end) forwards;
+    padding-left: 1vw;
+    text-align: center;
+    font-weight: 500;
+    
+}
+
+/* Informações Principais */
+
 /* Seção Sobre */
 
 h2{
@@ -88,8 +122,9 @@ h2{
 }
 
 .sobre{    
-    text-align: center;
-    font-weight: 900;
+    font-weight: 500;
+    display: flex;
+    flex-flow: column wrap;
 }
 
 .sobrediv{
@@ -97,8 +132,15 @@ h2{
     justify-content: center;
     flex-direction: row;
     width: 100vw;
-    padding: 5vh 0 0 0;
     align-items: center;
+}
+
+.subtituloSobre{
+    margin-top: 30vh;
+    margin-bottom: 3vh;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 900;
 }
 
 .imgHome{
@@ -112,19 +154,11 @@ p{
     max-width: 30vw;
 }
 
-h2::after{
-    display: block;
-    content: "";
-    margin: 5px auto;
-    background-color: #003;
-    width: 6em;
-    height: 5px;
-    border-radius: 3px;
-}
-
 .sobreTexto{    
     font-size: 1.2em;
-    max-width: 330px;
+    max-width: 450px;
+    text-align: initial;
+    letter-spacing: 1px;
 }
 
 /* Seção Sobre */
@@ -149,6 +183,7 @@ h3{
 .conquistasTitulo{
     text-align: center;
     padding-top: 5vh;
+    font-size: 2em;
 }
 
 .icone{
@@ -254,29 +289,39 @@ ul li{
         padding: 2vh 0;
     }
 
+    .titulosPrincipais{
+        left: 10%;
+    }
+
+    .nome{
+        font-size: 2.5em;
+    }
+
+    .profissao{
+        font-size: 1.5em;
+        text-align: initial;
+        padding-left: 10vw;
+    }
+
+    .subtituloSobre{
+        font-size: 1.1em;
+        margin-bottom: 3vh;
+    
+    }
+
     .imgHome{
-        max-width: 50vw;
+        max-width: 45vw;
         margin: 0;
+        height: 31vh;
     }
 
     .sobreTexto{
-        font-size: 3vw;
+        font-size: .65em;
         max-width: 55vw;
         padding: 0 3vw;
         min-height: 26vh;
     }
-
-    .sobrediv{
-        padding-top: 8vh;        
-    }
     
-    h2{
-        font-size: 5vw;
-    }
-
-    h2::after{
-        width: 25vw;
-    }
 
     .conquistasTitulo{
         padding-top: 8vh;
@@ -330,4 +375,16 @@ ul li{
     }
     
     
+}
+
+@keyframes digitando {
+    0%{width: 0%;}
+    5%{width: 0%;}
+    100%{ width: 100%; } 
+}
+
+@keyframes digitando2 {
+    0%{width: 0%;}
+    40%{width: 0%;}
+    100%{ width: 100%; }
 }

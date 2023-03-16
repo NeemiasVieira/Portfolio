@@ -159,12 +159,11 @@ input
     color: black;
     border: solid black 2px;
     border-radius: 10px;
-    width: 17vw;
     max-width: 350px;
     height: 6vh;
     font-weight: 700;
     cursor: pointer;
-    transition: background-color 700ms;
+    transition: background-color 300ms;
     text-decoration: none;
     text-align: center;
     background-color: white;
@@ -216,28 +215,27 @@ input
     padding: 1vh 1vw;
     border: solid black 3px;
     border-radius: 10px;
-    background-color: #024;
-    color: whitesmoke;
+    color: black;
  }
 
  .telefoneLink{
     display: flex;
     color: black;
-    width: 20vw;
-    max-width: 300px;
+    height: 70px;
+    width: 100px;
+    font-size: 1.7em;
+    border-radius: 30px;
     border: solid black 1px;
-    border-radius: 7.5px;
     align-items: center;
-    justify-content: center;
-    height: 4vh;
+    justify-content: center;    
     font-weight: 700;
-    font-size: large;
-    transition: background-color 700ms;
+    transition: all 100ms;
  }
 
  .telefoneLink:hover{
-    background-color: black;
-    color: whitesmoke;
+    background-color: #25d366;
+    color: black;
+    transform: scale(1.1);
  }
 
   /* Telefone */
@@ -353,9 +351,9 @@ ul li{
     }
 
     .input, .textarea, .buttonSendEmail
-    ,.textareaWhatsapp, .buttonSendWhatsapp
-    ,.telefoneLink{
+    ,.textareaWhatsapp, .buttonSendWhatsapp{
         width: 65vw;
+        gap: 2vw;
     }
 
     .rightsReserved{

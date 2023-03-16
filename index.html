@@ -24,13 +24,18 @@
         </nav>
     </header>
 
-    <main>
+    <main> 
+        
         <section class="sobre">
-            <h2>Sobre mim</h2>
+            <div class="titulosPrincipais">
+                <h1 class="nome">Neemias Vieira</h1>
+                <h2 class="profissao">Developer Front End Jr.</h2>
+            </div>
+            <h2 class="subtituloSobre">Um pouco sobre mim</h2>
             <div class="sobrediv">
                 <img src="./assets/Neemias.png" alt="Ilustração de desenvolvimento" class="imgHome">
                 <div>                    
-                    <p class="sobreTexto">Olá! Seja muito bem vindo ao meu Portfólio, sempre fui uma pessoa apaixonada por tecnologia, e hoje estou em busca da minha primeira experiência na área, gosto bastante de aprender e tenho certeza que estou pronto para iniciar no mercado de tecnologia =)</p>
+                    <p class="sobreTexto">Olá, tudo bem?<br>Seja muito bem vindo ao meu portfólio!<br><br> Para me apresentar, quero começar dizendo que sempre fui apaixonado por tecnologia e atualmente estou cursando Engenharia da Computação pela Universidade Santa Cecília, estudo e pratico desenvolvimento por fora sempre que tenho tempo disponivel, pois meu meu principal objetivo é conseguir a minha primeira experiência na área, gosto bastante de aprender e tenho certeza que estou pronto para ingressar o mercado de tecnologia =)</p>
                 </div>
             </div>
         </section>
@@ -98,9 +103,13 @@
 <script src="https://kit.fontawesome.com/f50aeb4f24.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
+    try{
     AOS.init({
         duration: 1000,
-    });
+    })}
+    catch{
+        console.log("Erro inesperado ao carregar os cookies de animação.")
+    };
 </script>
 
 </html>
