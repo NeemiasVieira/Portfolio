@@ -45,7 +45,7 @@ body::-webkit-scrollbar {
 }
 
 ul.navegacao{
-    background-color: #003;
+    background-color: #f90;
 }
 
 ul a li{
@@ -59,7 +59,7 @@ ul a li{
  }
  
  .navegacao .naoselecionado{
-     border-bottom: solid #003 3.5px;
+     border-bottom: solid #f90 3.5px;
  }
 
 a{

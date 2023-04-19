@@ -45,7 +45,7 @@ body::-webkit-scrollbar {
 }
 
 ul.navegacao{
-    background-color: #003;
+    background-color: #f90;
 }
 
 ul a li{
@@ -59,12 +59,13 @@ ul a li{
  }
  
  .navegacao .naoselecionado{
-     border-bottom: solid #003 3.5px;
+     border-bottom: solid #f90 3.5px;
  }
 
 a{
     text-decoration: none;
     color: whitesmoke;
+    font-size: 1.1em;
 }
 
 a:hover{
@@ -145,7 +146,16 @@ h2{
 
 .imgHome{
     margin: 2vh 2vw;
-    border-right: solid black 3px;
+    padding: 0 10px;
+    border-radius: 60px;
+    width: 300px;
+    height: 50vh;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.imgHome:hover{
+    transform: scale(1.1);
 }
 
 p{
@@ -156,9 +166,11 @@ p{
 
 .sobreTexto{    
     font-size: 1.2em;
+    height: 50vh;
     max-width: 450px;
     text-align: initial;
     letter-spacing: 1px;
+    border-left: solid black 3px;
 }
 
 /* Seção Sobre */
@@ -310,16 +322,19 @@ ul li{
     }
 
     .imgHome{
-        max-width: 45vw;
-        margin: 0;
+        max-width: 120px;
+        height: 250px;
+        margin: 0 2vw;
         padding: 7.5vw 0;
+        border-radius: 100px;
     }
 
     .sobreTexto{
-        font-size: .65em;
+        font-size: .7em;
         max-width: 55vw;
         padding: 0 3vw;
         min-height: 26vh;
+        height: 42vh;
     }
     
 

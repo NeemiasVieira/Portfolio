@@ -45,7 +45,7 @@ body::-webkit-scrollbar {
 }
 
 ul.navegacao{
-    background-color: #003;
+    background-color: #f90;
 }
 
 ul a li{
@@ -59,7 +59,7 @@ ul a li{
  }
  
  .navegacao .naoselecionado{
-     border-bottom: solid #003 3.5px;
+     border-bottom: solid #f90 3.5px;
  }
 
 a{
@@ -86,6 +86,8 @@ main{
     justify-content: center;
     background-color: rgba(220,220,220);
     min-height: 74vh;
+    align-items: center;
+    gap: 3vw;
 }
 
 .secaoFormulario{
@@ -95,8 +97,9 @@ main{
     gap: 1vh;
     align-items: center;
     width: 75vw;
+    max-width: 800px;
     height: 60vh;
-    margin: 5vh 10vw;
+    margin: 5vh 0;
     border: solid black 1px;
     background-color: #fff;
     border-radius: 10px;
@@ -108,10 +111,16 @@ main{
 
  .formularioPadrao{
     position: absolute;
+    max-width: 800px;
     top: 10vh;
     margin: 3vh 0;
     padding: 3vh 0;
     border-bottom: solid #bbb 5px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    
  }
 
 input
@@ -138,6 +147,7 @@ input
 
  h3{
     width: 70vw;
+    max-width: 800px;
     text-align: center;
  }
  
@@ -160,6 +170,7 @@ input
     border: solid black 2px;
     border-radius: 10px;
     max-width: 350px;
+    width: 20vw;
     height: 6vh;
     font-weight: 700;
     cursor: pointer;
@@ -182,8 +193,14 @@ input
 
  #selectContact{
     width: 30vw;
-    margin: 0 20.0vw;
+    max-width: 800px;
     text-align: center;
+    border: solid black 1px;
+    height: 25px;
+    font-weight: 900;
+    border-radius: 7px;
+    
+    
  }
 
  .buttonSendWhatsapp:hover{
@@ -241,6 +258,48 @@ input
   /* Telefone */
 
  /* Seção Formulário */
+
+ /* Seção Informações de Contato */
+
+ .informacoesDeContato{
+    width: 30vw;
+    max-width: 470px;
+    min-width: 290px;
+    height: 30vh;
+    background-color: whitesmoke;
+    border: solid black 1px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    border-radius: 10px;
+ }
+
+ .redes-sociais{
+    margin-top: 2vh;
+    display: flex;
+    gap: 2vw;
+ }
+
+ .iconBackWhite{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #222;
+    background-color: whitesmoke;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    transition: all 250ms;
+    border: solid black 1px;
+}
+
+.iconBackWhite:hover{
+    background-color: #222;
+    color: whitesmoke;
+    transform: scale(1.1);
+}
+
+ /* Seção Informações de Contato */
 
  /* Footer */
 
@@ -353,6 +412,7 @@ ul li{
     .input, .textarea, .buttonSendEmail
     ,.textareaWhatsapp, .buttonSendWhatsapp{
         width: 65vw;
+        max-width: 800px;
         gap: 2vw;
     }
 
@@ -373,4 +433,22 @@ ul li{
         padding: 0;
         gap: 10vw;
     }
+
+    main{
+        flex-flow: column wrap;
+    }
+
+ .informacoesDeContato{
+    width: 85vw;
+    height: 40vh;
+    flex-flow: column wrap;
+    margin-bottom: 5vh;
+ }
+
+ .redes-sociais{
+    margin-top: 2vh;
+    display: flex;
+    gap: 8vw;
+ }
+
 }
