@@ -126,7 +126,7 @@ header{
 }
 
 .manualBtn{
-    border: 2px solid #003;
+    border: 2px solid #f90;
     padding: 5px;
     border-radius: 10px; 
     cursor: pointer;
@@ -139,7 +139,7 @@ header{
 }
 
 .manualBtn:hover{
-    background-color: #003;
+    background-color: #f90;
 }
 
 #radio1:checked ~ .primeiroSlide{
@@ -155,7 +155,7 @@ header{
 }
 
 .navegacaoAuto div{
-    border: 2px solid #003;
+    border: 2px solid #f90;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -178,13 +178,13 @@ header{
 }
 
 #radio1:checked ~ .navegacaoAuto .autoBtn1{
-    background-color: #003;
+    background-color: #f90;
 }
 #radio2:checked ~ .navegacaoAuto .autoBtn2{
-    background-color: #003;
+    background-color: #f90;
 }
 #radio3:checked ~ .navegacaoAuto .autoBtn3{
-    background-color: #003;
+    background-color: #f90;
 }
 
 /* Slides */
@@ -338,7 +338,7 @@ header{
     justify-content: center;
     align-items: center;
     gap: 2vw;
-    padding: 4vh 0 0 1.5vw;
+    padding: 3vh 0 0 1.5vw;
     margin: 0;
 }
 
@@ -356,7 +356,7 @@ ul li{
     color: #ccc;
     font-size: 1em;
     text-align: center;
-    padding: 0 0 0 2vw;
+    padding: 0 0 2vh 2vw;
 }
 
 
@@ -408,11 +408,6 @@ ul li{
         margin-top: 29vh;
     }
 
-    .rightsReserved{
-        font-size: 3vw;
-        max-width: 100vw;
-    }
-
     .cv{
         height: 20vh;
         width: 100vw;
@@ -438,11 +433,18 @@ ul li{
         gap: 1vw;
     }
 
+    .rightsReserved{
+        font-size: .9em;
+        max-width: 100vw;
+    }
+
+    
     .footer{
         height: 20vh;
     }
 
     .listaFooter{
+        margin-top: 4vh;
         padding: 0;
         gap: 10vw;
     }

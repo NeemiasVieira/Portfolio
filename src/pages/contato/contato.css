@@ -88,6 +88,7 @@ main{
     min-height: 74vh;
     align-items: center;
     gap: 3vw;
+    margin: 0 1vw;
 }
 
 .secaoFormulario{
@@ -263,6 +264,7 @@ input
 
  .informacoesDeContato{
     width: 30vw;
+    padding: 0 3vw;
     max-width: 470px;
     min-width: 290px;
     height: 30vh;
@@ -348,7 +350,7 @@ input
     justify-content: center;
     align-items: center;
     gap: 2vw;
-    padding: 4vh 0 0 1.5vw;
+    padding: 3vh 0 0 1.5vw;
     margin: 0;
 }
 
@@ -366,7 +368,7 @@ ul li{
     color: #ccc;
     font-size: 1em;
     text-align: center;
-    padding: 0 0 0 2vw;
+    padding: 0 0 2vh 2vw;
 }
 
 
@@ -421,21 +423,24 @@ ul li{
     }
 
     .rightsReserved{
-        font-size: 3vw;
+        font-size: .9em;
         max-width: 100vw;
     }
 
+    
     .footer{
         height: 20vh;
     }
 
     .listaFooter{
+        margin-top: 4vh;
         padding: 0;
         gap: 10vw;
     }
 
     main{
         flex-flow: column wrap;
+        margin: 0;
     }
 
  .informacoesDeContato{

@@ -98,11 +98,12 @@ h2{
     border: solid black 3px;
     width: 25vw;
     max-width: 350px;
+    min-width: 275px;
     display: flex;
     justify-content: initial;
     flex-direction: column;    
     margin: 1vh 1vw;
-    transition: border-color 350ms;   
+    border-radius: 10px;  
 }
 
 .projetosContent{
@@ -111,6 +112,7 @@ h2{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    align-items: baseline;
 
 }
 
@@ -118,13 +120,15 @@ h2{
     width: 25vw;
     height: 35vh;
     max-width: 350px;
+    max-height: 400px;
+    min-width: 275px;
 }
 
 .projetoButton{
     background-color: whitesmoke;
     border: solid black 2px;
     color: black;
-    font-size: 1.2em;
+    font-size: 1.1em;
     border-radius: 10px;
     width: 17vw;
     max-width: 250px;
@@ -136,14 +140,35 @@ h2{
     justify-self: flex-end;
 }
 
-
 .projetoButton:hover{
     background-color: black;
     color: whitesmoke;
-    width: 21vw;
+    width: 19vw;
     max-width: 300px;
     font-weight: 900;
 }
+
+
+.emBreve{
+    font-weight: 900;
+    color: #444;
+    font-size: 1.4em;
+    transition: all 500ms;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23vw;
+    max-width: 300px;
+}
+
+
+.emBreve:hover{
+    color: rgb(255, 68, 101);
+    transform: scale(1.05);
+    cursor: not-allowed;
+}
+
 
 /* Projetos */
 
@@ -151,13 +176,9 @@ h2{
 
 #modal{
     width: 35vw;
+    max-width: 600px;
     height: 40vh;
-    position: absolute;
     display: flex;
-    top: 30vh;
-    bottom: 30vh;
-    left: 32.5vw;
-    right: 32.5vw;
     background-color: whitesmoke;
     color: black;
     flex-flow: row wrap;
@@ -171,6 +192,7 @@ h2{
     align-items: center;
     height: 15vh;
     width: 35vw;
+    max-width: 600px;
     gap: 2vw;
 }
 
@@ -182,6 +204,9 @@ h2{
     height: 100%;
     background-color: rgba(0,0,0,0.6);
     z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #sombra, #modal{
@@ -195,6 +220,7 @@ h2{
     justify-content: space-between;
     align-items: center;
     width: 35vw;
+    max-width: 600px;
     margin-bottom: 10px;
     border-bottom: 5px solid #ccc;
 }
@@ -233,6 +259,7 @@ button.closeButton{
     font-size: 20px;
     text-align: center;
     width: 32vw;
+    max-width: 550px;
     font-weight: 700;
 }
 
@@ -240,8 +267,9 @@ button.closeButton{
     border: solid black 2px;
     font-size: 16px;
     color: black;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 13vw;
+    max-width: 225px;
     height: 6vh;
     font-weight: 700;
     cursor: pointer;
@@ -308,7 +336,7 @@ button.closeButton{
     justify-content: center;
     align-items: center;
     gap: 2vw;
-    padding: 4vh 0 0 1.5vw;
+    padding: 3vh 0 0 1.5vw;
     margin: 0;
 }
 
@@ -326,7 +354,7 @@ ul li{
     color: #ccc;
     font-size: 1em;
     text-align: center;
-    padding: 0 0 0 2vw;
+    padding: 0 0 2vh 2vw;
 }
 
 
@@ -347,6 +375,12 @@ ul li{
         width: 70vw;
         border-radius: 10px;
     }
+
+    .emBreve{
+        font-size: 1.2em;
+        transition: all 500ms;
+        width: 65vw;
+    }
     
     .projetoButton, .projetoButton:hover{
         width: 55vw;
@@ -356,14 +390,9 @@ ul li{
         width: 70vw;
     }
 
-
-    .rightsReserved{
-        font-size: 3vw;
-        max-width: 100vw;
-    }
-
     #modal{
         width: 90vw;
+        height: 30vh;
         left: 5vw;
         right: 5vw;
     }
@@ -388,6 +417,7 @@ ul li{
 
     .modalHeader, .modalContent{
         width: 90vw;
+        
     }
 
     .modalContent{
@@ -395,11 +425,17 @@ ul li{
         gap: 7vw;
     }
 
+    .rightsReserved{
+        font-size: .9em;
+        max-width: 100vw;
+    }
+    
     .footer{
         height: 20vh;
     }
 
     .listaFooter{
+        margin-top: 4vh;
         padding: 0;
         gap: 10vw;
     }
