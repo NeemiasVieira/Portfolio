@@ -39,7 +39,7 @@ body::-webkit-scrollbar {
     padding: 3vh 2vw; 
     margin: 0;   
     height: 2vh;
-    max-height: 20px;
+    max-height: 30px;
     gap: 3vw;
     
     
@@ -66,6 +66,8 @@ ul a li{
 a{
     text-decoration: none;
     color: whitesmoke;
+    font-size: 1em;
+    padding-bottom: 2px;
 }
 
 a:hover{
@@ -214,7 +216,8 @@ header{
 .botao{
     transform: translate(0%, 0%);
     height: 90px;
-    width: 20vw;
+    width: 30vw;
+    max-width: 350px;
     background: black;
     border-radius: 30px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
@@ -447,5 +450,9 @@ ul li{
         margin-top: 4vh;
         padding: 0;
         gap: 10vw;
+    }
+
+    a:hover{
+        font-weight: 600;
     }
 }

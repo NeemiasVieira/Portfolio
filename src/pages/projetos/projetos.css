@@ -39,8 +39,9 @@ body::-webkit-scrollbar {
     padding: 3vh 2vw; 
     margin: 0;   
     height: 2vh;
-    max-height: 20px;
-    gap: 3vw; 
+    max-height: 30px;
+    gap: 3vw;
+    
     
 }
 
@@ -65,6 +66,8 @@ ul a li{
 a{
     text-decoration: none;
     color: whitesmoke;
+    font-size: 1em;
+    padding-bottom: 2px;
 }
 
 a:hover{
@@ -76,10 +79,13 @@ header{
     display: flex;
 }
 
-
 /* Navegação/Cabeçalho */
 
 /* Projetos */
+
+main{
+    min-height: 71.5vh;
+}
 
 h2{
     display: flex;   
@@ -96,9 +102,7 @@ h2{
 .projetos{
     list-style: none;
     border: solid black 3px;
-    width: 25vw;
-    max-width: 350px;
-    min-width: 275px;
+    width: 300px;
     display: flex;
     justify-content: initial;
     flex-direction: column;    
@@ -107,8 +111,9 @@ h2{
 }
 
 .projetosContent{
-    padding: 1.5vh 1vw;
+    padding: 1.5vh 10px;
     border-top: solid #222 3px;
+    max-width: 280px;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -119,9 +124,9 @@ h2{
 .imagensProjetos{
     width: 25vw;
     height: 35vh;
-    max-width: 350px;
-    max-height: 400px;
-    min-width: 275px;
+    width: 300px;
+    max-height: 300px;
+    
 }
 
 .projetoButton{
@@ -132,6 +137,7 @@ h2{
     border-radius: 10px;
     width: 17vw;
     max-width: 250px;
+    min-height: 50px;
     height: 5vh;
     align-self: center;    
     font-weight: 600;
@@ -144,8 +150,12 @@ h2{
     background-color: black;
     color: whitesmoke;
     width: 19vw;
-    max-width: 300px;
+    max-width: 270px;
     font-weight: 900;
+}
+
+p{
+    height: 190px;
 }
 
 
@@ -154,12 +164,13 @@ h2{
     color: #444;
     font-size: 1.4em;
     transition: all 500ms;
-    height: 80px;
+    height: 5vh;
+    min-height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 23vw;
-    max-width: 300px;
+    max-width: 280px;
 }
 
 
@@ -297,6 +308,7 @@ button.closeButton{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
     overflow: hidden;
 }
 
@@ -355,6 +367,7 @@ ul li{
     font-size: 1em;
     text-align: center;
     padding: 0 0 2vh 2vw;
+    height: auto;
 }
 
 
@@ -374,6 +387,10 @@ ul li{
     .projetos{
         width: 70vw;
         border-radius: 10px;
+    }
+
+    a:hover{
+        font-weight: 600;
     }
 
     .emBreve{
@@ -438,5 +455,9 @@ ul li{
         margin-top: 4vh;
         padding: 0;
         gap: 10vw;
+    }
+
+    p{
+        height: auto;
     }
 }
