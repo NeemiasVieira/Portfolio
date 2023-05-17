@@ -410,8 +410,8 @@ ul li{
     }
 
     h3{
-        width: 85vw;
-        margin: 0;
+        width: 74vw;
+        margin: 0 0 20px 0;
     }
 
     .input, .textarea, .buttonSendEmail

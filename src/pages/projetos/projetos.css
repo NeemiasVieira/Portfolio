@@ -429,6 +429,7 @@ ul li{
     
     .projetoButton, .projetoButton:hover, .buttonBackEnd, .buttonBackEnd:hover{
         width: 55vw;
+        margin-top: 15px;
     }
 
     .imagensProjetos{
@@ -486,6 +487,10 @@ ul li{
     }
 
     p{
+        height: auto;
+    }
+
+    .DescricaoDosProjetos{
         height: auto;
     }
 }
