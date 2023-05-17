@@ -87,12 +87,11 @@ header{
 
 main{
     display: flex;
-    justify-content: center;
-    background-color: rgba(220,220,220);
+    justify-content: center; 
     min-height: 74vh;
     align-items: center;
     gap: 3vw;
-    margin: 0 1vw;
+    overflow-x: hidden;
 }
 
 .secaoFormulario{
@@ -391,7 +390,7 @@ ul li{
     }
 
     .secaoFormulario{
-        margin: 5vh 5vw;
+        margin: 1vh 5vw;
         width: 85vw;
         overflow: hidden;
     }
