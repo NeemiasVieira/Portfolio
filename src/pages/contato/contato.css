@@ -102,12 +102,13 @@ main{
     gap: 1vh;
     align-items: center;
     width: 75vw;
-    max-width: 800px;
-    height: 60vh;
+    max-width: 600px;
+    height: auto;
     margin: 5vh 0;
     border: solid black 1px;
     background-color: #fff;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .hide{
@@ -115,11 +116,10 @@ main{
  }
 
  .formularioPadrao{
-    position: absolute;
-    max-width: 800px;
-    top: 10vh;
-    margin: 3vh 0;
-    padding: 3vh 0;
+    width: 75vw;
+    max-width: 600px;
+    margin: 1.5vh 0;
+    padding: 1.5vh 0 3vh 0;
     border-bottom: solid #bbb 5px;
     display: flex;
     flex-flow: column wrap;
@@ -131,7 +131,8 @@ main{
 input
  {
     height: 3vh;
-    width: 30vw;     
+    width: 35vw;
+    max-width: 500px;     
     border-radius: 12px;
     border: solid;
     border-color: rgb(204, 204, 204);
@@ -142,17 +143,17 @@ input
  textarea
  {
     height: 15vh;
-    width: 30vw;
+    width: 35vw;
+    max-width: 500px; 
     border-radius: 12px;
     border: solid;
     border-color: rgb(204, 204, 204);
     background-color: whitesmoke;
-    text-align: center;   
+    text-align: center;       
  } 
 
  h3{
-    width: 70vw;
-    max-width: 800px;
+    max-width: 600px;
     text-align: center;
  }
  
@@ -164,8 +165,7 @@ input
     justify-content: center;
     align-items: center;
     gap: 2vh;    
-    width: 75vw;
-    padding-top: 16vh;
+    padding-bottom: 20px;
 
  }
 
@@ -197,8 +197,8 @@ input
  /* e-mail */
 
  #selectContact{
-    width: 30vw;
-    max-width: 800px;
+    width: 35vw;
+    max-width: 500px; 
     text-align: center;
     border: solid black 1px;
     height: 25px;
@@ -219,7 +219,7 @@ input
     justify-content: center;
     align-items: center;
     gap: 3vh;
-    padding-top: 12vh;
+    padding-bottom: 20px;
  }
 
  /* Telefone */
@@ -229,6 +229,7 @@ input
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 40px;
  }
 
  .numeroTelefone{
@@ -278,6 +279,7 @@ input
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    justify-content: center;
     border-radius: 10px;
  }
 
@@ -402,12 +404,8 @@ ul li{
 
     .formularioPadrao{
         width: 85vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: column wrap;
-        gap: 2vh;
-        margin: 5vh 0;
+        gap: 10px;
+        margin: 2vh 0;
         
     }
 
@@ -421,6 +419,10 @@ ul li{
         width: 65vw;
         max-width: 800px;
         gap: 2vw;
+    }
+
+    .telefoneContent{
+        padding-bottom: 60px;
     }
 
     .numeroTelefone{
@@ -450,9 +452,11 @@ ul li{
 
  .informacoesDeContato{
     width: 85vw;
-    height: 40vh;
+    height: 30vh;
     flex-flow: column wrap;
     margin-bottom: 5vh;
+    max-width: 310px;
+    padding: 2vh 5vw;
  }
 
  .redes-sociais{
