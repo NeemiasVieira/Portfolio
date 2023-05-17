@@ -138,7 +138,7 @@ h2{
     width: 17vw;
     max-width: 250px;
     min-height: 50px;
-    height: 5vh;
+    height: 4.5vh;
     align-self: center;    
     font-weight: 600;
     transition: all 500ms;
@@ -165,8 +165,8 @@ h2{
     border-radius: 10px;
     width: 17vw;
     max-width: 250px;
-    min-height: 50px;
-    height: 5vh;
+    min-height: 45px;
+    height: 4.3vh;
     align-self: center;    
     font-weight: 600;
     transition: all 500ms;
