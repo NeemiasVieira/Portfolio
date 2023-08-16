@@ -23,6 +23,16 @@ const lista = {
     {
         "linkProjeto": "https://neemiasvieira.github.io/Calculadora-de-Numeros-Complexos/NumerosComplexos1.html",
         "linkRepositorio": "https://github.com/NeemiasVieira/Calculadora-de-Numeros-Complexos"
+    },
+    5:
+    {
+        "linkProjeto": "https://neemiasvieira.github.io/SistemaDeMonitoramentoDoSolo/",
+        "linkRepositorio": "https://github.com/NeemiasVieira/SistemaDeMonitoramentoDoSolo"
+    },
+    6:
+    {
+        "linkProjeto": "https://neemiasvieira.github.io/to-do-list-fullstack/",
+        "linkRepositorio": "https://github.com/NeemiasVieira/to-do-list-fullstack"
     }
 }
 

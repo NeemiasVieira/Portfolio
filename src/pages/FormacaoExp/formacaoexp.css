@@ -46,7 +46,7 @@ body::-webkit-scrollbar {
 }
 
 ul.navegacao{
-    background-color: #f90;
+    background-color: #3077AB;
 }
 
 ul a li{
@@ -56,11 +56,23 @@ ul a li{
 }
 
 .navegacao .selecionado{
-    border-bottom: solid #fff 3.5px;
+    padding: 2.7vh;
+    transition: all 100ms;
+    border-bottom: solid #FE7A00 6.5px;
+ }
+
+ .navegacao .selecionado:hover{
+    background-color: #3077BF;
  }
  
  .navegacao .naoselecionado{
-     border-bottom: solid #f90 3.5px;
+     padding: 2.7vh;
+     border-bottom: solid #3077AB 3.5px;
+     transition: all 100ms;
+ }
+
+ .navegacao .naoselecionado:hover{
+    background-color: #3077BF;
  }
 
 a{
@@ -78,6 +90,7 @@ a:hover{
 header{
     display: flex;
 }
+
 
 
 /* Navegação/Cabeçalho */
@@ -128,7 +141,7 @@ header{
 }
 
 .manualBtn{
-    border: 2px solid #f90;
+    border: 2px solid #FE7A00;
     padding: 5px;
     border-radius: 10px; 
     cursor: pointer;
@@ -141,7 +154,7 @@ header{
 }
 
 .manualBtn:hover{
-    background-color: #f90;
+    background-color: #FE7A00;
 }
 
 #radio1:checked ~ .primeiroSlide{
@@ -157,7 +170,7 @@ header{
 }
 
 .navegacaoAuto div{
-    border: 2px solid #f90;
+    border: 2px solid #FE7A00;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -180,13 +193,13 @@ header{
 }
 
 #radio1:checked ~ .navegacaoAuto .autoBtn1{
-    background-color: #f90;
+    background-color: #FE7A00;
 }
 #radio2:checked ~ .navegacaoAuto .autoBtn2{
-    background-color: #f90;
+    background-color: #FE7A00;
 }
 #radio3:checked ~ .navegacaoAuto .autoBtn3{
-    background-color: #f90;
+    background-color: #FE7A00;
 }
 
 /* Slides */
@@ -370,6 +383,15 @@ ul li{
         font-size: 3vw;
         justify-content: center;
         gap: 6vw;
+        padding: 2vh 0;
+    }
+
+    .navegacao .selecionado{
+        padding: 2vh 0;
+        border-bottom: solid #FE7A00 4.5px;
+    }
+
+    .navegacao .naoselecionado{
         padding: 2vh 0;
     }
 
