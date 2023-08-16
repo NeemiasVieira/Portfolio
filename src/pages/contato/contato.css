@@ -402,12 +402,12 @@ ul li{
     }
 
     .navegacao .selecionado{
-        padding: 2vh 0;
+        padding: 1.5vh 0;
         border-bottom: solid #FE7A00 4.5px;
     }
 
     .navegacao .naoselecionado{
-        padding: 2vh 0;
+        padding: 1.5vh 0;
     }
 
     .secaoFormulario{
