@@ -38,7 +38,7 @@ body::-webkit-scrollbar {
     width: 100vw;
     padding: 3vh 2vw; 
     margin: 0;   
-    height: 2vh;
+    height: 21px;
     max-height: 30px;
     gap: 3vw;
     
@@ -46,8 +46,14 @@ body::-webkit-scrollbar {
 }
 
 ul.navegacao{
-    background-color: #3077AB;
+    background-color: rgba(48, 119, 171, 0.5);
+    transition: all 150ms;
 }
+
+ul.navegacao:hover{
+    background-color: rgba(48, 119, 171, 1);
+}
+
 
 ul a li{
     padding: 1vh;   
@@ -56,7 +62,7 @@ ul a li{
 }
 
 .navegacao .selecionado{
-    padding: 2.7vh;
+    padding: 17px;
     transition: all 100ms;
     border-bottom: solid #FE7A00 6.5px;
  }
@@ -66,8 +72,8 @@ ul a li{
  }
  
  .navegacao .naoselecionado{
-     padding: 2.7vh;
-     border-bottom: solid #3077AB 3.5px;
+     padding: 15px;
+     border-bottom: solid rgba(48, 119, 171, 0) 3.5px;
      transition: all 100ms;
  }
 
