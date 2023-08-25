@@ -33,6 +33,11 @@ const lista = {
     {
         "linkProjeto": "https://neemiasvieira.github.io/to-do-list-fullstack/",
         "linkRepositorio": "https://github.com/NeemiasVieira/to-do-list-fullstack"
+    },
+    7:
+    {
+        "linkProjeto": "https://neemiasvieira.github.io/InglesComGabi/",
+        "linkRepositorio": "https://github.com/NeemiasVieira/InglesComGabi"
     }
 }
 
