@@ -38,6 +38,11 @@ const lista = {
     {
         "linkProjeto": "https://neemiasvieira.github.io/InglesComGabi/",
         "linkRepositorio": "https://github.com/NeemiasVieira/InglesComGabi"
+    },
+    8:
+    {
+        "linkProjeto": "https://neemiasvieira.github.io/DriveExperience/",
+        "linkRepositorio": "https://github.com/NeemiasVieira/API-Driver-Experience"
     }
 }
 
