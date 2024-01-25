@@ -60,19 +60,11 @@ ul a li{
     transition: all 100ms;
     border-bottom: solid #FE7A00 6.5px;
  }
-
- .navegacao .selecionado:hover{
-    background-color: #3077BF;
- }
  
  .navegacao .naoselecionado{
      padding: 15px;
      border-bottom: solid rgba(48, 119, 171, 0) 3.5px;
      transition: all 100ms;
- }
-
- .navegacao .naoselecionado:hover{
-    background-color: #3077BF;
  }
 
 a{

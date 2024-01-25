@@ -1,40 +1,40 @@
-var selection = document.querySelector("#selectContact");
-var email = document.querySelector(".e-mail");
-var whatsapp = document.querySelector(".whatsapp");
-const telefone = document.querySelector(".telefone");
+// var selection = document.querySelector("#selectContact");
+// var email = document.querySelector(".e-mail");
+// var whatsapp = document.querySelector(".whatsapp");
+// const telefone = document.querySelector(".telefone");
 const whatsappFormulario = document.querySelector(".whatsappFormulario");
 
-const addContact = (obj1) => {
-    obj1.classList.remove("hide");
-}
+// const addContact = (obj1) => {
+//     obj1.classList.remove("hide");
+// }
 
-const removeContact = (obj1) => {
-    obj1.classList.add("hide");
-}
+// const removeContact = (obj1) => {
+//     obj1.classList.add("hide");
+// }
 
-const atualiza = () => {
-    switch(selection.selectedIndex){
-        case 0:
-            addContact(email);
-            removeContact(whatsapp);
-            removeContact(telefone);
-            break;
-        case 1:
-            removeContact(email);
-            addContact(whatsapp);
-            removeContact(telefone);
-            break;
-        case 2:
-            removeContact(email);
-            removeContact(whatsapp);
-            addContact(telefone);
-            break;
-    }
-}
+// const atualiza = () => {
+//     switch(selection.selectedIndex){
+//         case 0:
+//             addContact(email);
+//             removeContact(whatsapp);
+//             removeContact(telefone);
+//             break;
+//         case 1:
+//             removeContact(email);
+//             addContact(whatsapp);
+//             removeContact(telefone);
+//             break;
+//         case 2:
+//             removeContact(email);
+//             removeContact(whatsapp);
+//             addContact(telefone);
+//             break;
+//     }
+// }
 
-selection.addEventListener("change", () => {
-    atualiza();
-})
+// selection.addEventListener("change", () => {
+//     atualiza();
+// })
 
 // WhatsApp:
 
