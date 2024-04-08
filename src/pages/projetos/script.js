@@ -26,7 +26,7 @@ const lista = {
     },
     5:
     {
-        "linkProjeto": "https://neemiasvieira.github.io/SistemaDeMonitoramentoDoSolo/",
+        "linkProjeto": "http://172.212.98.90:3000/SistemaDeMonitoramentoDoSolo/",
         "linkRepositorio": "https://github.com/NeemiasVieira/SistemaDeMonitoramentoDoSolo"
     },
     6:
